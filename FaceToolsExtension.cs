@@ -59,7 +59,7 @@ public class FaceToolsExtension : Extension
         ComfyUIBackendExtension.NodeToFeatureMap["ReActorFaceSwapOpt"] = FeatureId;
         string oldNodePath = Utilities.CombinePathWithAbsolute(Environment.CurrentDirectory, $"{ComfyUIBackendExtension.Folder}/DLNodes/comfyui-reactor-node");
         string newNodePath = Utilities.CombinePathWithAbsolute(Environment.CurrentDirectory, $"{ComfyUIBackendExtension.Folder}/DLNodes/ComfyUI-ReActor");
-        string nodeUrl = "https://github.com/Gourieff/ComfyUI-ReActor";
+        string nodeUrl = "https://codeberg.org/Gourieff/comfyui-reactor-node";
         
         // Add required custom node as installable feature
         InstallableFeatures.RegisterInstallableFeature(new("ReActor", FeatureId, nodeUrl, "Gourieff", $"This will install the ComfyUI-ReActor node developed by Gourieff from {nodeUrl}.\nDo you wish to install?"));
